@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 public class AlertDivByZero {
     public static void main(String[] args) {
-        possibleDiv(-8);
+        possibleDiv(-3);
         possibleDiv(0);
     }
 
