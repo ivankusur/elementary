@@ -11,9 +11,6 @@ public class SqAreaTest {
     public void square() {
         int p = 6;
         int k = 2;
-        double h = p / (2 * (k + 1));
-        double l = h * k;
-        double s = l * h;
 
         double expected = 2;
         double out = SqArea.square(p, k);
