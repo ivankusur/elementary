@@ -10,14 +10,14 @@ public class TriangleTest {
     @Test
     public void whenExist() {
         assertThat(Triangle.exist(2.0, 2.0, 2.0),
-                is("Triangle Exist"));
+                is(true));
 
     }
 
     @Test
     public void whenAbsent() {
         assertThat(Triangle.exist(5.5, 2.0, 2.0),
-                is("Triangle Absent"));
+                is(false));
 
     }
 }
