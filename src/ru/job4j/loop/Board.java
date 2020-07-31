@@ -5,7 +5,6 @@ public class Board {
         for (int row = 0; row < height; row++) {
             for (int cell = 0; cell < width; cell++) {
                 /* условие проверки, что писать пробел или X */
-                /* Выше в задании мы определили закономерность, когда нужно проста,влять X */
                 if ((row + cell) % 2 == 0) {
                     System.out.print("X");
                 } else {
