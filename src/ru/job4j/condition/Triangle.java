@@ -8,7 +8,8 @@ public class Triangle {
     public static void main(String[] args) {
         if (Triangle.exist(2.0, 2.0, 2.0)) {
             System.out.println("Triangle exist");
-        } else
+        } else {
             System.out.println("Triangle absent");
+        }
     }
 }
