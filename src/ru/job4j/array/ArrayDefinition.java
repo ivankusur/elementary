@@ -1,8 +1,7 @@
-package ru.job4j;
+package ru.job4j.array;
 
-public class Array {
+public class ArrayDefinition {
     short[] ages = new short[10];
     String[] sureName = new String[100500];
     float[] prices = new float[40];
-
 }
