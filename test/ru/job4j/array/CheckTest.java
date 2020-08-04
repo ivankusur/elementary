@@ -17,7 +17,7 @@ public class CheckTest {
 
     @Test
     public void whenDataMonoWasFalseThenFalse() {
-        boolean[] input = new boolean[]{true, false, false, true};
+        boolean[] input = new boolean[]{true, true, true, false};
         boolean result = Check.mono(input);
         boolean expected = false;
         assertThat(expected, is(result));
