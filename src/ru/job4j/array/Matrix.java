@@ -10,4 +10,14 @@ public class Matrix {
         }
         return table;
     }
+
+    public static void main(String[] args) {
+        int[][] table = multiple(2);
+        for (int i = 0; i < table.length; i++) {
+            System.out.println();
+            for (int j = 0; j < table[i].length; j++) {
+                System.out.print(table[i][j] + " ");
+            }
+        }
+    }
 }    
