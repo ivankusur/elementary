@@ -10,6 +10,14 @@ public class Merge {
         int i = 0;
 
         while (i < result.length) {
+            if (a.length == 0) {
+                result = b;
+                break;
+            }
+            if (b.length == 0) {
+                result = a;
+                break;
+            }
             result[i] = a[aIndex] < b[bIndex] ? a[aIndex++] : b[bIndex++];
             if (aIndex == a.length) {
                 System.arraycopy(b, bIndex, result, ++i, b.length - bIndex);
@@ -22,13 +30,5 @@ public class Merge {
             i++;
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        int[] a = {1, 2, 3, 4, 5, 16};
-        int[] b = {6, 7, 8, 9, 10, 11, 12};
-
-        int[] result = merge(a, b);
-        System.out.println(Arrays.toString(result));
     }
 }
