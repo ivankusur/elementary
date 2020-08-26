@@ -10,23 +10,15 @@ public class Merge {
         int i = 0;
 
         while (i < result.length) {
-            if (a.length == 0) {
-                result = b;
-                break;
-            }
-            if (b.length == 0) {
-                result = a;
-                break;
-            }
-            result[i] = a[aIndex] < b[bIndex] ? a[aIndex++] : b[bIndex++];
             if (aIndex == a.length) {
-                System.arraycopy(b, bIndex, result, ++i, b.length - bIndex);
+                System.arraycopy(b, bIndex, result, i, b.length - bIndex);
                 break;
             }
             if (bIndex == b.length) {
-                System.arraycopy(a, aIndex, result, ++i, a.length - aIndex);
+                System.arraycopy(a, aIndex, result, i, a.length - aIndex);
                 break;
             }
+            result[i] = a[aIndex] < b[bIndex] ? a[aIndex++] : b[bIndex++];
             i++;
         }
         return result;
